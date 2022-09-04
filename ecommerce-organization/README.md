@@ -1,33 +1,44 @@
-# Shop-Shop
+# Basic NextJs Store
 
-## Description
-Shop-Shop is an e-commerce single page application(SPA) powered by MERN (MongoDB, Express, REACT, NODE). The app utilize REACT's context API to manage global state, JSON Web Token (JWT) for authentication and Stripe api for payment. This application is a mobile first,Progressive Web Application that leverages IndexDB and services worker for offline functionalities.
+- This is a basic ecommerce site made in nextjs using webpay, mongoose and yum.
 
-## Built with
+## Important
+- I made this just to practice my code so don't use it in production. 
+- You must add a .env or .env.local file with `DATABASE_URL`.
+- I save the cart on local storage, but for extra security it should be encrypt.
+- Or you can use cookies.
+- Or a serverside cart with an encrypt token.
 
-* REACT.js
-* MongoDB
-* Mongoose
-* Node.js
-* Express.js
-* Graphql
-* Stripe 
-* MongoDB Atlas
-* Heroku
-* JWT 
-* IndexDB
-* PWA
-## Installation 
-* Download or clone the repo
-* Node.js framework and MONGO_DB is required to run the application
-* Use command ```npm install``` to install all dependencies
-* Use ```npm run develop``` to invoke the application to run on local host
+## To Test Pay Method Use:
+- Credit Cart: 4051885600446623
+- Rut: 11.111.111-1
+- Password: 123
+
+## In This Store You Can:
+- Upload products without custom picture for the momen.
+- Remove those products.
+- Add-remove products from cart.
+- Add order to database when complete delivery form.
+- When pay successful update order STATUS.
+
+## Run Locally 
+- Clone the repository and run:
+
+```bash
+    npm install
+```
+Development:
+```bash
+    npm run dev
+```
+Production:
+```bash
+    npm run build
+    npm run start
+```
+    
 
 ## Demo
-![demo](client/src/assets/🛍️-Shop-Shop.gif)
-## Deployed link 
-https://limitless-temple-48027.herokuapp.com/
 
-## License
-MIT License
-Copyright (c) 2022 Grace Liu
+https://nextjs-store-mr-ema.vercel.app/
+
